@@ -1,29 +1,11 @@
-// app/page.jsx
+import SiteHeader from "./components/SiteHeader";
+import Home from "./components/Home";
 
-import BlueyAnimator from "./components/BlueyAnimator";
-import NanoBananaEditor from "./components/NanoBananaEditor";
-import SketchColorAnimator from "./components/SketchColorAnimator";
-
-
-export default function page() {
+export default function Page() {
   return (
-
-    <>
-    <div>
-        <SketchColorAnimator/>
-
-      </div>
-     <div>
-        <NanoBananaEditor/>
-
-      </div>
-
-      <div>
-        <BlueyAnimator/>
-
-      </div>
-    </>
-
-
+    <div className="min-h-screen bg-[#06081a]">
+      <SiteHeader />
+      <Home />
+    </div>
   );
 }
